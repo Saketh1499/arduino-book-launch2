@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="-1">
+   <meta name="description" content="Synfig Studio 2D Animation Hackathon by FOSSEE">
+   <meta name="author" content="FOSSEE web team">
+   <meta name="keywords" content="Hackathon, coding, competition">
+   <meta name="keywords"
+      content="Synfig, Synfig Studio, 2D Animation, short video, art, pictures, Open source, software">
+   <link rel="icon" href="image/fevicon_0.png">
+   <title>Book Launch</title>
+   <!-- Bootstrap core CSS -->
+   <link href="bootstrap-4.5.0/css/bootstrap.min.css" rel="stylesheet">
+   <link href="fontawesome/css/all.css" rel="stylesheet">
+   <link href="css/custom.css?ver=1.4" rel="stylesheet">
+  <script>
+    function reloadFunction(event) {
+      if (event.persisted) {
+        console.log("The page was cached by the browser");
+        location.reload(true);
+      } else {
+        console.log("The page was NOT cached by the browser");
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+<script language="javascript">
+    
+function divReplacebook3(){
+
+            setTimeout(
+      function(){
+       
+        // $('#Div-A').replaceWith($('#Div-B'));
+         $('#Div-B').show();
+        divReplacebook3twice();
+      },
+      600
+   );
+ 
+ }
+  function divReplacebook3twice(){
+ 
+   setTimeout(
+      function(){
+       
+         $('#Div-B').replaceWith($('#winners'));
+         $('#winners').show();
+       
+      },
+      5000
+   );
+   }
+   function divReplacebook4(){
+
+            setTimeout(
+      function(){
+       
+        // $('#Div-A').replaceWith($('#Div-B'));
+         $('#consolation-congratulations').show();
+        divReplacebook4twice();
+      },
+      600
+   );
+ 
+ }
+ function divReplacebook4twice(){
+ 
+   setTimeout(
+      function(){
+       
+         $('#consolation-congratulations').replaceWith($('#consolation'));
+         $('#consolation').show();
+       
+      },
+      3500
+   );
+ }
+ 
+</script>
+
+  
+<section id="announcement">
+  <div class="py-3">
+    <h2 class="display-5 section-title text-center">LAUNCH OF ARDUINO BOOKS!</h2>
+  </div>
+
+  <center>
+    <div class="tab">
+      <button class="tablinks btn btn-lg btn-outline-success" onclick="divReplacebook3(event, 'Book3')" style="color: black">Book III</button>
+      <button class="tablinks btn btn-lg btn-outline-info" onclick="divReplacebook4(event, 'Book4')" id="defaultOpen" style="color: black">Book IV</button>
+    </div>
+  </center>
+
+  <br>
+  <center>
+      <div id="Book3" class="tabcontent">
+        <div id="Div-B" style="display:none;">
+          <img id="myImage" src="image/winner.gif" class="img-fluid">
+        </div>
+      </div>
+  </center>
+
+  <br>
+  <center>
+      <div id="Book4" class="tabcontent">
+       <div id="consolation-congratulations" style="display:none;">
+        <img id="myImage" src="image/Consolation.gif" class="img-fluid">
+      </div>
+      </div>
+  </center>
+</section>
+
+
+   <!-- Bootstrap core JavaScript
+         ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="bootstrap-4.5.0/js/bootstrap.min.js"></script>
+   <script src="js/holder.min.js"></script>
+   <script src="js/custom.js?v={{ substr(md5(date("Y-m-d_Hi")),10,18) }}"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTNG859K51"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+
+   function gtag(){
+      dataLayer.push(arguments);
+   }
+   gtag('js', new Date());
+   gtag('config', 'G-MTNG859K51');
+   </script>
+   <script type="text/javascript">
+      var activeNavItem = $('.nav-item');
+
+      activeNavItem.click(function () {
+         activeNavItem.removeClass('active');
+         $(this).addClass('active');
+      });
+   </script>
+</body>
+
+</html>
