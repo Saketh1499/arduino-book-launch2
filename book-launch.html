@@ -34,56 +34,24 @@
 
 <script language="javascript">
     
-function divReplacebook3(){
+function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-            setTimeout(
-      function(){
-       
-        // $('#Div-A').replaceWith($('#Div-B'));
-         $('#Div-B').show();
-        divReplacebook3twice();
-      },
-      600
-   );
- 
- }
-  function divReplacebook3twice(){
- 
-   setTimeout(
-      function(){
-       
-         $('#Div-B').replaceWith($('#winners'));
-         $('#winners').show();
-       
-      },
-      10000
-   );
-   }
-   function divReplacebook4(){
+function myFunction4() {
+  var x = document.getElementById("myDIV4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-            setTimeout(
-      function(){
-       
-        // $('#Div-A').replaceWith($('#Div-B'));
-         $('#consolation-congratulations').show();
-        divReplacebook4twice();
-      },
-      600
-   );
- 
- }
- function divReplacebook4twice(){
- 
-   setTimeout(
-      function(){
-       
-         $('#consolation-congratulations').replaceWith($('#consolation'));
-         $('#consolation').show();
-       
-      },
-      10000
-   );
- }
  
 </script>
 
@@ -95,29 +63,25 @@ function divReplacebook3(){
 
   <center>
     <div class="tab">
-      <button class="tablinks btn btn-lg btn-outline-success text-center" onclick="divReplacebook3(event, 'Book3')" style="color: black">Microcontroller Programming with<br>Arduino and Julia</button>&nbsp; &nbsp; &nbsp; 
+      <button class="tablinks btn btn-lg btn-outline-success text-center" onclick="myFunction3(event, 'Book3')" style="color: black">Microcontroller Programming with<br>Arduino and Julia</button>&nbsp; &nbsp; &nbsp; 
       
-      <button class="tablinks btn btn-lg btn-outline-info text-center" onclick="divReplacebook4(event, 'Book4')" style="color: black">Microcontroller Programming with<br>Arduino and OpenModelica</button>
+      <button class="tablinks btn btn-lg btn-outline-info text-center" onclick="myFunction4(event, 'Book4')" style="color: black">Microcontroller Programming with<br>Arduino and OpenModelica</button>
     </div>
   </center>
 
   <br>
   <center>
-      <div id="Book3" class="tabcontent">
-        <div id="Div-B" style="display:none;">
-          <img id="myImage" src="image/arduino-Juila.png" class="img-fluid">
-        </div>
+      <div id="myDIV3" class="tabcontent" style="display:none;">
+        <img id="myImage" src="image/arduino-Juila.png" class="img-fluid">
       </div>
   </center>
 
   <br>
   <center>
-      <div id="Book4" class="tabcontent">
-       <div id="consolation-congratulations" style="display:none;">
+      <div id="myDIV4" class="tabcontent" style="display:none;">
         <img id="myImage" src="image/arduino-OM.png" class="img-fluid">
       </div>
-      </div>
-  </center>
+  </center><br>
 </section>
 
 
